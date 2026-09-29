@@ -1,26 +1,3 @@
-const bagCount = document.querySelector(".bag-count");
-const bagLink = document.querySelector(".bag-link");
-let itemCount = Number(localStorage.getItem("petalBagCount") || 0);
-
-function updateBag() {
-  bagCount.textContent = itemCount;
-  bagLink.setAttribute("aria-label", `Shopping bag, ${itemCount} ${itemCount === 1 ? "item" : "items"}`);
-}
-
-document.querySelectorAll(".quick-add").forEach((button) => {
-  button.addEventListener("click", () => {
-    itemCount += 1;
-    localStorage.setItem("petalBagCount", itemCount);
-    updateBag();
-    button.textContent = "✓";
-    button.setAttribute("aria-label", "Added to bag");
-    window.setTimeout(() => {
-      button.textContent = "+";
-      button.setAttribute("aria-label", `Add ${button.closest(".product-card").dataset.name} to bag`);
-    }, 1200);
-  });
-});
-
 const filterButtons = [...document.querySelectorAll(".filter-button")];
 const productCards = [...document.querySelectorAll(".product-card")];
 const searchInput = document.querySelector("#flower-search");

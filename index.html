@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7e5e4">
+  <meta name="description" content="Thoughtful flowers for the big days, the small days, and every day in between. Handcrafted in our neighborhood studio.">
+  <title>Petal & Tide | Flowers for every feeling</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little beauty, delivered. Free local delivery on orders over $75.</div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Petal and Tide home">petal<span>&</span>tide<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="shop.html">Shop flowers</a>
+      <a href="studio.html">Our little studio</a>
+      <a href="notes.html">Flower notes</a>
+    </nav>
+    <a class="bag-link" href="#shop" aria-label="Shopping bag, 0 items">Bag <span class="bag-count">0</span></a>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="eyebrow-line"></span> YOUR NEIGHBORHOOD FLOWER STUDIO</p>
+        <h1>Flowers for<br>every <em>feeling.</em></h1>
+        <p class="hero-intro">Made by hand, gathered with heart, and delivered fresh from our little corner of the world.</p>
+        <a class="button button-dark" href="shop.html">Find your flowers <span aria-hidden="true">↗</span></a>
+        <div class="hero-footnote"><span class="handwritten">Always in season</span><span class="tiny-flower" aria-hidden="true">✳</span> Hand-tied just for you</div>
+      </div>
+      <div class="hero-image-wrap">
+        <img class="hero-image" src="https://images.unsplash.com/photo-1490750967868-88aa4486c946?auto=format&fit=crop&w=1500&q=85" alt="A loose, colorful bouquet of fresh garden flowers">
+        <div class="image-stamp"><span>GROWN WITH</span><strong>♥</strong><span>GOOD INTENTIONS</span></div>
+        <span class="image-caption">A softer kind of everyday</span>
+      </div>
+      <div class="hero-side-note" aria-hidden="true">FRESH FLOWERS, GOOD FEELINGS</div>
+    </section>
+
+    <section class="shop-section" id="shop">
+      <div class="section-heading">
+        <div>
+          <p class="eyebrow">A FEW FAVORITES</p>
+          <h2>Pick a little <em>joy.</em></h2>
+        </div>
+        <p class="section-note">Seasonal stems, gathered close<br>and sent with love.</p>
+      </div>
+      <div class="shop-tools">
+        <div class="filters" role="group" aria-label="Filter flowers">
+          <button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All flowers</button>
+          <button class="filter-button" type="button" data-filter="bouquet" aria-pressed="false">Bouquets</button>
+          <button class="filter-button" type="button" data-filter="plants" aria-pressed="false">Plants & pots</button>
+        </div>
+        <label class="search-box"><span class="visually-hidden">Search flowers</span><input type="search" id="flower-search" placeholder="Find a flower..." autocomplete="off"><span aria-hidden="true">⌕</span></label>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="bouquet" data-name="The Sunday Bunch">
+          <div class="product-image image-one"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=80" alt="Pink and peach flowers in a hand-tied bouquet" loading="lazy"><span class="product-label">STUDIO FAVORITE</span><button class="quick-add" type="button" aria-label="Add The Sunday Bunch to bag">+</button></div>
+          <div class="product-info"><div><h3>The Sunday Bunch</h3><p>Cosmos, roses, whatever's lovely</p></div><span class="price">80000 ugx</span></div>
+        </article>
+        <article class="product-card" data-category="bouquet" data-name="Peachy Keen">
+          <div class="product-image image-two"><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=80" alt="Warm-toned seasonal flower arrangement" loading="lazy"><button class="quick-add" type="button" aria-label="Add Peachy Keen to bag">+</button></div>
+          <div class="product-info"><div><h3>Peachy Keen</h3><p>For the sunshine in your life</p></div><span class="price">64000 ugx</span></div>
+        </article>
+        <article class="product-card" data-category="bouquet" data-name="Wild at Heart">
+          <div class="product-image image-three"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5b6d0?auto=format&fit=crop&w=900&q=80" alt="Airy wildflower bouquet in a clear glass vase" loading="lazy"><button class="quick-add" type="button" aria-label="Add Wild at Heart to bag">+</button></div>
+          <div class="product-info"><div><h3>Wild at Heart</h3><p>A little untamed, a lot of love</p></div><span class="price">1000000
+
+          </span></div>
+        </article>
+        <article class="product-card" data-category="plants" data-name="Little Leaf">
+          <div class="product-image image-four"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80" alt="Leafy potted houseplant in a ceramic planter" loading="lazy"><span class="product-label label-aqua">A GOOD GROWER</span><button class="quick-add" type="button" aria-label="Add Little Leaf to bag">+</button></div>
+          <div class="product-info"><div><h3>Little Leaf</h3><p>A happy home for your windowsill</p></div><span class="price">58000</span></div>
+        </article>
+      </div>
+      <p class="empty-state" hidden>No stems found just yet. Try another search.</p>
+    </section>
+
+    <section class="studio-section" id="about">
+      <div class="studio-image"><img src="https://images.unsplash.com/photo-1526045478516-99145907023c?auto=format&fit=crop&w=1200&q=85" alt="Florist arranging a fresh bouquet in the studio" loading="lazy"><span class="studio-image-note">OUR LITTLE CORNER OF THE WORLD</span></div>
+      <div class="studio-copy">
+        <p class="eyebrow">A SMALL STUDIO, A BIG SOFT SPOT</p>
+        <h2>Good flowers.<br><em>Good people.</em></h2>
+        <p>We believe a bunch of flowers can say the things we sometimes can't. So we source thoughtfully, snip each stem by hand, and make every arrangement feel like it was made for someone.</p>
+        <a class="text-link" href="studio.html">A little more about us <span aria-hidden="true">↗</span></a>
+        <span class="studio-scribble" aria-hidden="true">made with love</span>
+      </div>
+    </section>
+
+    <section class="quote-band" id="notes">
+      <span class="quote-mark" aria-hidden="true">“</span>
+      <blockquote>Flowers are sunshine, food and medicine to the soul.</blockquote>
+      <p>— Luther Burbank</p>
+      <span class="quote-flower" aria-hidden="true">✳</span>
+    </section>
+
+    <section class="newsletter-section">
+      <div><p class="eyebrow">POSTCARDS FROM THE STUDIO</p><h2>A little note, <em>now and then.</em></h2><p>Seasonal stems, studio stories, and the occasional very good dog.</p></div>
+      <form class="newsletter-form" id="newsletter-form">
+        <label class="visually-hidden" for="email-address">Your email address</label>
+        <input id="email-address" type="email" placeholder="Your email address" required>
+        <button type="submit" aria-label="Subscribe to studio notes">Join us <span aria-hidden="true">↗</span></button>
+        <p class="form-message" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="wordmark footer-wordmark" href="#home">petal<span>&</span>tide<span class="wordmark-dot">.</span></a>
+    <p>Flowers for every feeling. Made fresh in Brooklyn, NY.</p>
+    <div class="footer-links"><a href="shop.html">Shop</a><a href="studio.html">Our studio</a><a href="notes.html">Flower notes</a><a href="mailto:hello@petalandtide.com">Say hello</a></div>
+    <div class="footer-social" aria-label="Social media"><span class="social-label">Follow along</span><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></div>
+    <span class="copyright">© 2026 Petal & Tide</span>
+  </footer>
+</body>
+</html>

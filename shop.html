@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#c8e8df">
+  <meta name="description" content="Shop fresh, hand-tied bouquets and happy little plants from Petal & Tide.">
+  <title>Shop Flowers | Petal & Tide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;1,500;1,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div class="announcement">A little beauty, delivered. Free local delivery on orders over $75.</div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html" aria-label="Petal and Tide home">petal<span>&</span>tide<span class="wordmark-dot">.</span></a>
+    <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="primary-nav" aria-label="Open menu"><span></span><span></span></button>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation"><a href="shop.html" aria-current="page">Shop flowers</a><a href="studio.html">Our little studio</a><a href="notes.html">Flower notes</a></nav>
+    <a class="bag-link" href="#products" aria-label="Shopping bag"><span class="bag-label">Bag</span> <span class="bag-count">0</span></a>
+  </header>
+  <main>
+    <section class="page-banner shop-banner">
+      <div class="page-banner-copy"><p class="eyebrow">FRESH FROM THE STUDIO</p><h1>A bunch of <em>good.</em></h1><p>Hand-tied in our Brooklyn studio, delivered fresh to their door (or yours).</p></div>
+      <div class="banner-mark" aria-hidden="true">✳</div>
+      <span class="banner-side-note">SEASONAL STEMS · ALWAYS THOUGHTFUL</span>
+    </section>
+    <section class="shop-section inner-shop" id="products">
+      <div class="section-heading"><div><p class="eyebrow">GATHERED WITH CARE</p><h2>Find your <em>favorite.</em></h2></div><p class="section-note">Wrapped in recycled paper<br>and a little extra love.</p></div>
+      <div class="shop-tools">
+        <div class="filters" role="group" aria-label="Filter flowers"><button class="filter-button is-active" type="button" data-filter="all" aria-pressed="true">All flowers</button><button class="filter-button" type="button" data-filter="bouquet" aria-pressed="false">Bouquets</button><button class="filter-button" type="button" data-filter="plants" aria-pressed="false">Plants & pots</button></div>
+        <label class="search-box"><span class="visually-hidden">Search flowers</span><input type="search" id="flower-search" placeholder="Find a flower..." autocomplete="off"><span aria-hidden="true">⌕</span></label>
+      </div>
+      <div class="product-grid" id="product-grid">
+        <article class="product-card" data-category="bouquet" data-name="The Sunday Bunch"><div class="product-image image-one"><img src="https://images.unsplash.com/photo-1520763185298-1b434c919102?auto=format&fit=crop&w=900&q=80" alt="Pink and peach flowers in a hand-tied bouquet"><span class="product-label">STUDIO FAVORITE</span><button class="quick-add" type="button" aria-label="Add The Sunday Bunch to bag">+</button></div><div class="product-info"><div><h3>The Sunday Bunch</h3><p>Cosmos, roses, whatever's lovely</p></div><span class="price">$58</span></div></article>
+        <article class="product-card" data-category="bouquet" data-name="Peachy Keen"><div class="product-image image-two"><img src="https://images.unsplash.com/photo-1487530811176-3780de880c2d?auto=format&fit=crop&w=900&q=80" alt="Warm-toned seasonal flower arrangement" loading="lazy"><button class="quick-add" type="button" aria-label="Add Peachy Keen to bag">+</button></div><div class="product-info"><div><h3>Peachy Keen</h3><p>For the sunshine in your life</p></div><span class="price">$64</span></div></article>
+        <article class="product-card" data-category="bouquet" data-name="Wild at Heart"><div class="product-image image-three"><img src="https://images.unsplash.com/photo-1525310072745-f49212b5b6d0?auto=format&fit=crop&w=900&q=80" alt="Airy wildflower bouquet in a clear glass vase" loading="lazy"><button class="quick-add" type="button" aria-label="Add Wild at Heart to bag">+</button></div><div class="product-info"><div><h3>Wild at Heart</h3><p>A little untamed, a lot of love</p></div><span class="price">$72</span></div></article>
+        <article class="product-card" data-category="plants" data-name="Little Leaf"><div class="product-image image-four"><img src="https://images.unsplash.com/photo-1485955900006-10f4d324d411?auto=format&fit=crop&w=900&q=80" alt="Leafy potted houseplant in a ceramic planter" loading="lazy"><span class="product-label label-aqua">A GOOD GROWER</span><button class="quick-add" type="button" aria-label="Add Little Leaf to bag">+</button></div><div class="product-info"><div><h3>Little Leaf</h3><p>A happy home for your windowsill</p></div><span class="price">$38</span></div></article>
+        <article class="product-card" data-category="bouquet" data-name="Soft Landing"><div class="product-image image-two"><img src="https://images.unsplash.com/photo-1508610048659-a06b669e3321?auto=format&fit=crop&w=900&q=80" alt="Soft pastel flowers arranged in a glass vase" loading="lazy"><button class="quick-add" type="button" aria-label="Add Soft Landing to bag">+</button></div><div class="product-info"><div><h3>Soft Landing</h3><p>A gentle hello or a big thank you</p></div><span class="price">$68</span></div></article>
+        <article class="product-card" data-category="plants" data-name="Sunday Fern"><div class="product-image image-four"><img src="https://images.unsplash.com/photo-1501004318641-b39e6451bec6?auto=format&fit=crop&w=900&q=80" alt="Fresh green fern in a simple planter" loading="lazy"><button class="quick-add" type="button" aria-label="Add Sunday Fern to bag">+</button></div><div class="product-info"><div><h3>Sunday Fern</h3><p>For a little green in your day</p></div><span class="price">$42</span></div></article>
+      </div>
+      <p class="empty-state" hidden>No stems found just yet. Try another search.</p>
+    </section>
+    <section class="delivery-strip"><span class="tiny-flower" aria-hidden="true">✳</span><p>Need it today? <a href="mailto:hello@petalandtide.com">Give the studio a ring</a> and we'll see what we can do.</p></section>
+  </main>
+  <footer class="site-footer"><a class="wordmark footer-wordmark" href="index.html">petal<span>&</span>tide<span class="wordmark-dot">.</span></a><p>Flowers for every feeling. Made fresh in Brooklyn, NY.</p><div class="footer-links"><a href="shop.html">Shop</a><a href="studio.html">Our studio</a><a href="notes.html">Flower notes</a><a href="mailto:hello@petalandtide.com">Say hello</a></div><div class="footer-social" aria-label="Social media"><span class="social-label">Follow along</span><a href="https://www.whatsapp.com/" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.twitter.com/" target="_blank" rel="noopener noreferrer">Twitter</a></div><span class="copyright">© 2026 Petal & Tide</span></footer>
+</body>
+</html>
